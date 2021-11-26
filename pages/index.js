@@ -14,7 +14,7 @@ export default function Home({ pokemones }) {
   console.log(pokemones)
   return (
     <div>
-      <p>La increíble App de Pokemones del Pancho</p>
+      <p data-testid="titulo">La increíble App de Pokemones del Pancho</p>
       <ul>
         {pokemones.map(pokemon => <Pokemon key={pokemon.name} pokemon={pokemon} />)}        
       </ul>
